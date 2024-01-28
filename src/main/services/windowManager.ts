@@ -10,6 +10,7 @@ const baseURL = is.dev && server ? server : join('file://', __dirname, '../rende
 
 type BrowserWindowInit = BrowserWindow | null
 class WindowManager {
+
     private constructor() {
         // 窗口初始化
         const win = userdata.getUserData('isLogin') ? this.mainWin() : this.loginWin()
@@ -39,8 +40,13 @@ class WindowManager {
         if (!this.loginWindow) {
             this.loginWindow = new BrowserWindow({
                 ...configs.browser,
-                resizable: false
+                width: 280,
+                height: 400,
+                frame: false,
+                resizable: false,
+                minimizable: false
             })
+            this.loginWindow.setTitle('登陆')
             this.loginWindow.loadURL(baseURL + '#login')
             this.loginWindow.once('close', () => {
                 if (!userManager.getUserData('isLogin')) app.quit()
@@ -48,6 +54,7 @@ class WindowManager {
                 this.loginWindow = null
             })
         }
+
         return this.loginWindow
     }
     public static init(): WindowManager {
