@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <style>
+        @keyframes slideAndFadeOut {
+            0% {
+                transform: translateX(0);
+            }
+
+            50% {
+                transform: translateX(-50px);
+            }
+
+            100% {
+                transform: translateX(-100px);
+            }
+        }
+
+        .slide-and-fade-out {
+            animation: slideAndFadeOut 1s ease-out;
+        }
+    </style>
+    <div class="slide-and-fade-out">这是一个左移动并消失的动画</div>
+</body>
+
+</html>
