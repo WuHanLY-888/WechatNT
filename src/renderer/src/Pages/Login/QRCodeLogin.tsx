@@ -70,7 +70,7 @@ const App: React.FC = () => {
                 <div className='ant-motion-fade'>
                     <div className={styles.top}>
                         <p style={{ marginTop: 4 }}>
-                            扫码登陆微信
+                            请扫码登陆《丐版微信》
                         </p>
                     </div>
                     <QRCode

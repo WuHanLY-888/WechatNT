@@ -9,6 +9,8 @@ import MsgManager from './Message'
 interface userdata {
     // [key: string]: unknown
     isLogin: boolean
+    name?: string
+    city?: string
     realName?: string
     nickName?: string
     avatar?: string
@@ -29,7 +31,7 @@ class userManager {
 
         this.bot = WechatyBuilder.build(options)
         this.bot.on('logout', (e) => this.onLogout.call(this, e))
-            .on('login', (e) => this.onLogin.call(this, e))
+            .on('login', (e) => this.userlogin.call(this, e))
             .on('scan', (...e) => this.onScan.apply(this, e))
             .on('error', (e) => this.onError.call(this, e))
             .on('message', (e) => MsgManager.onMessage(e, this.bot))
@@ -52,10 +54,6 @@ class userManager {
             this.getUserData(key)
         )
 
-        ipcHelper.handle('user-login', () => {
-            this.userlogin()
-        })
-
         ipcHelper.handle('user-logout', () => this.logout())
 
         ipcHelper.handle('get-scan', () => this.getScanInfo())
@@ -70,32 +68,29 @@ class userManager {
         isLogin: false
     }
 
-
-
     private onScan(qrcode: string, status: ScanStatus, data?: string) {
-        console.log({ qrcode, status, data });
-
         this.qrcodeInfo.qrcode = qrcode
         this.qrcodeInfo.status = status
         const loginWin = WindowManager.init().loginWindow
 
         loginWin?.webContents.send('user-scan', { qrcode, status, data })
 
-        if (status === ScanStatus.Waiting || status === ScanStatus.Timeout) {
-            // qrTerm.generate(qrcode)
+        switch (status) {
+            case ScanStatus.Waiting || ScanStatus.Timeout:
+                const qrcodeImageUrl = [
+                    'https://wechaty.js.org/qrcode/',
+                    encodeURIComponent(qrcode)
+                ].join('')
+                console.info('onScan: %s(%s) - %s', ScanStatus[status], status, qrcodeImageUrl)
 
-            const qrcodeImageUrl = [
-                'https://wechaty.js.org/qrcode/',
-                encodeURIComponent(qrcode)
-            ].join('')
-            console.info('onScan: %s(%s) - %s', ScanStatus[status], status, qrcodeImageUrl)
-        } else {
-            console.info('onScan: %s(%s)', ScanStatus[status], status)
+            case ScanStatus.Scanned:
+                this.userdata.avatar = data
+
+            default:
+                console.log({ qrcode, status, data });
+                break;
         }
-    }
 
-    private onLogin(user: Contact) {
-        console.info(`${user.name()} login`)
     }
 
     private onLogout(user: Contact) {
@@ -139,8 +134,14 @@ class userManager {
             ...data
         }
     }
-    public userlogin() {
-        this.userdata.isLogin = true
+    public async userlogin(contact: Contact) {
+        this.userdata = {
+            ...this.userdata,
+            isLogin: true,
+            name: contact.payload?.name,
+            city: contact.city()
+
+        }
         const win = WindowManager.init()
         const main = win.mainWin()
         // 创建主窗口
