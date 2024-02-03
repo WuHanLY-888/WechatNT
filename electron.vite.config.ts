@@ -15,8 +15,7 @@ export default defineConfig({
             alias: {
                 '@renderer': resolve('src/renderer/src'),
                 '@': resolve('src'),
-                '~': resolve('src/renderer/src/store'),
-
+                '~': resolve('src/renderer/src/store')
             }
         },
         plugins: [
@@ -25,8 +24,8 @@ export default defineConfig({
                 // 指定需要缓存的图标文件夹
                 iconDirs: [resolve(process.cwd(), 'src/renderer/src/assets/svg')],
                 // 指定symbolId格式
-                symbolId: 'icon-[dir]-[name]',
-            }),
+                symbolId: 'icon-[dir]-[name]'
+            })
         ],
         css: {
             preprocessorOptions: {

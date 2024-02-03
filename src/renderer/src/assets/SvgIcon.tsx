@@ -1,4 +1,3 @@
-
 interface propsTypes {
     name: string
     prefix?: string

@@ -20,25 +20,20 @@ const App: React.FC = () => {
             setLoginStatus(data.status)
             switch (data.status) {
                 case 0: // 未知
-
-                    break;
+                    break
                 case 1: // 取消
-
-                    break;
+                    break
                 case 2: // 等待
-
-                    break;
+                    break
                 case 3: // 被扫了
                     setUserAvatar(data.data)
-                    break;
+                    break
                 case 4: // 完成了
-
-                    break;
+                    break
                 case 5: // 超时
-
-                    break;
+                    break
                 default:
-                    break;
+                    break
             }
         })
         invoke('get-scan').then((data: qrcodeStatusTypes) => {
@@ -63,50 +58,45 @@ const App: React.FC = () => {
         setUserAvatar(void 0)
     }
 
-
     return (
         <div>
-            {(loginStatus <= 2 || loginStatus === 5) &&
-                <div className='ant-motion-fade'>
+            {(loginStatus <= 2 || loginStatus === 5) && (
+                <div className="ant-motion-fade">
                     <div className={styles.top}>
-                        <p style={{ marginTop: 4 }}>
-                            请扫码登陆《丐版微信》
-                        </p>
+                        <p style={{ marginTop: 4 }}>请扫码登陆《丐版微信》</p>
                     </div>
                     <QRCode
                         style={{ margin: '0 auto', padding: '0', borderRadius: '0' }}
                         errorLevel="H"
                         size={150}
-                        color='#424242' // #fcfcfd
+                        color="#424242" // #fcfcfd
                         bordered={false}
                         status={status}
                         onRefresh={reFreshQRcode}
                         value={codeVal}
                     />
-
-                </div>}
-            {(loginStatus >= 3 && loginStatus <= 4) &&
-                <div className='ant-motion-fade'>
-                    <div className={styles.top}
-                        style={{ height: 400 }}>
-                        <Avatar shape="square" size={80}
-                            src={userAvatarUrl} />
+                </div>
+            )}
+            {loginStatus >= 3 && loginStatus <= 4 && (
+                <div className="ant-motion-fade">
+                    <div className={styles.top} style={{ height: 400 }}>
+                        <Avatar shape="square" size={80} src={userAvatarUrl} />
                         <p style={{ marginTop: 30 }}>
-                            {
-                                loginStatus === 3
-                                    ? '需要在手机上进行确定' : '正在登陆'
-                            }
+                            {loginStatus === 3 ? '需要在手机上进行确定' : '正在登陆'}
                         </p>
-                        <Button type="link"
+                        <Button
+                            type="link"
                             className={styles.cancelBtn}
                             onClick={scanCancel}
                             style={{
-                                color: '#5b6b92',
-                            }}>
+                                color: '#5b6b92'
+                            }}
+                        >
                             取消
                         </Button>
                     </div>
-                </div>}
+                </div>
+            )}
         </div>
     )
 }

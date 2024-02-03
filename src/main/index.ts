@@ -4,7 +4,6 @@ import WindowManager from './services/windowManager'
 import user from './services/userManager'
 import { Default } from './services/ipcMain'
 
-
 // console.log(import.meta.env.VITE_MY_VARIABLE)
 
 function AppReady(): void {
@@ -15,8 +14,6 @@ function AppReady(): void {
     const main = user.getUserData('isLogin') ? win.mainWin() : win.loginWin()
     // 拿到窗口实例，并展示
     main.show()
-
-
 }
 
 // 程序准备就绪，可以使用一些api了
@@ -46,8 +43,6 @@ app.whenReady().then(() => {
     app.on('activate', function () {
         AppReady()
     })
-
-
 })
 
 app.on('window-all-closed', () => {
@@ -55,4 +50,3 @@ app.on('window-all-closed', () => {
         app.quit()
     }
 })
-

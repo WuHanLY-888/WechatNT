@@ -10,7 +10,6 @@ const baseURL = is.dev && server ? server : join('file://', __dirname, '../rende
 
 type BrowserWindowInit = BrowserWindow | null
 class WindowManager {
-
     private constructor() {
         // 窗口初始化
         const win = userdata.getUserData('isLogin') ? this.mainWin() : this.loginWin()

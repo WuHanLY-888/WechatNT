@@ -1,5 +1,5 @@
 import { Avatar, Breadcrumb, Layout } from 'antd'
-import { UserOutlined } from '@ant-design/icons';
+import { UserOutlined } from '@ant-design/icons'
 import React, { useEffect, useState } from 'react'
 import './index.less'
 import style from './index.module.less'
@@ -9,7 +9,7 @@ import LeftBar from './leftBar'
 import WinControl from '@renderer/components/WinControl'
 import { avatar } from '@renderer/store'
 
-import { useAtom } from 'jotai';
+import { useAtom } from 'jotai'
 
 const { Header, Content, Footer, Sider } = Layout
 
@@ -31,21 +31,28 @@ const App: React.FC = () => {
     }, [])
     return (
         <Layout style={{ minHeight: '100vh', background: '#ffffff00' }}>
-            <Sider width="60"
+            <Sider
+                width="60"
                 style={{
                     height: '100vh',
-                    backgroundColor: '#e3e3e300',
+                    backgroundColor: '#e3e3e300'
                 }}
             >
                 <div className={style.userAvatar}>
-                    <Avatar shape="square" src={avatarUrl}
-                        size={40} icon={<UserOutlined />} />
+                    <Avatar shape="square" src={avatarUrl} size={40} icon={<UserOutlined />} />
                 </div>
                 <LeftBar />
             </Sider>
             <Layout>
-                <Sider collapsible collapsed={collapsed} onCollapse={(value) => setCollapsed(value)}>
-                    <div className="logo" style={{ marginTop: window.platform === 'darwin' ? 30 : 0 }}>
+                <Sider
+                    collapsible
+                    collapsed={collapsed}
+                    onCollapse={(value) => setCollapsed(value)}
+                >
+                    <div
+                        className="logo"
+                        style={{ marginTop: window.platform === 'darwin' ? 30 : 0 }}
+                    >
                         <h2 style={{ textAlign: 'center', lineHeight: '30px' }}>logo</h2>
                     </div>
                     <MainMenu />
@@ -60,7 +67,9 @@ const App: React.FC = () => {
                             justifyContent: 'space-between'
                         }}
                     >
-                        <Breadcrumb style={{ lineHeight: '64px' }}>{extraBreadcrumbItems}</Breadcrumb>
+                        <Breadcrumb style={{ lineHeight: '64px' }}>
+                            {extraBreadcrumbItems}
+                        </Breadcrumb>
                         <WinControl />
                     </Header>
                     <Content style={{ margin: '0 16px' }}>
@@ -70,7 +79,6 @@ const App: React.FC = () => {
                         Ant Design ©2018 Created by Ant UED
                     </Footer>
                 </Layout>
-
             </Layout>
         </Layout>
     )

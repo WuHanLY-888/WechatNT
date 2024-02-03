@@ -3,7 +3,7 @@ import WindowManager from './windowManager'
 
 import { WechatyBuilder, ScanStatus, Contact } from '../src/mods/mod.js'
 import { WechatyInterface } from '../src/wechaty/wechaty-impl'
-import Store from "electron-store";
+import Store from 'electron-store'
 import MsgManager from './Message'
 
 const store = new Store()
@@ -31,7 +31,8 @@ class userManager {
         }
 
         this.bot = WechatyBuilder.build(options)
-        this.bot.on('logout', (e) => this.onLogout.call(this, e))
+        this.bot
+            .on('logout', (e) => this.onLogout.call(this, e))
             .on('login', (e) => this.userlogin.call(this, e))
             .on('scan', (...e) => this.onScan.apply(this, e))
             .on('error', (e) => this.onError.call(this, e))
@@ -75,7 +76,7 @@ class userManager {
         const loginWin = WindowManager.init().loginWindow
 
         loginWin?.webContents.send('user-scan', { qrcode, status, data })
-        console.log({ qrcode, status, data });
+        console.log({ qrcode, status, data })
 
         switch (status) {
             case ScanStatus.Waiting || ScanStatus.Timeout:
@@ -90,10 +91,9 @@ class userManager {
                 this.userdata.avatar = data
 
             default:
-                console.log({ qrcode, status, data });
-                break;
+                console.log({ qrcode, status, data })
+                break
         }
-
     }
 
     private onLogout(user: Contact) {
@@ -103,7 +103,6 @@ class userManager {
     private onError(e: Error) {
         console.error('Bot error:', e)
         this.bot.start()
-
     }
 
     /**
@@ -147,7 +146,6 @@ class userManager {
             isLogin: true,
             name: contact.payload?.name,
             city: contact.city()
-
         }
         const win = WindowManager.init()
         const main = win.mainWin()
@@ -188,4 +186,3 @@ class userManager {
 // const usermanager = userManager.init()
 
 export default userManager.init()
-

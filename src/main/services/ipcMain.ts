@@ -1,6 +1,6 @@
 import { ipcHelper } from '@electron-toolkit/utils'
-import { ipcMain } from 'electron';
-import Store from "electron-store";
+import { ipcMain } from 'electron'
+import Store from 'electron-store'
 // import WindowManager from './windowManager'
 // import user from './userManager'
 

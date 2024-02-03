@@ -1,15 +1,13 @@
-import { Message } from "../src/mods/users"
+import { Message } from '../src/mods/users'
 
 import { FileBox } from 'file-box'
-import { WechatyInterface } from "../src/wechaty/wechaty-impl"
+import { WechatyInterface } from '../src/wechaty/wechaty-impl'
 // import { MessageType } from "wechaty-puppet/dist/esm/src/schemas/message"
 
 class MsgManager {
     static instance: MsgManager
     // static bot: WechatyInterface
-    private constructor() {
-
-    }
+    private constructor() {}
     static init(): MsgManager {
         if (!this.instance) {
             this.instance = new MsgManager()
@@ -64,7 +62,6 @@ class MsgManager {
                 '(secret code: wechaty)'
             ].join('')
         )
-
     }
 }
 
