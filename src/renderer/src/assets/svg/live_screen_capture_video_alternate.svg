@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="30px" height="30px" viewBox="0 0 30 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>close/click</title>
+    <g id="close/click" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <circle id="椭圆形备份-3" fill="#404040" cx="15" cy="15" r="15"></circle>
+        <path d="M19.6849315,9 L21,10.3150685 L16.315,15 L21,19.6849315 L19.6849315,21 L15,16.315 L10.3150685,21 L9,19.6849315 L13.685,15 L9,10.3150685 L10.3150685,9 L15,13.685 L19.6849315,9 Z" id="形状结合" fill="#FFFFFF"></path>
+        <circle id="椭圆形" fill-opacity="0.3" fill="#000000" cx="15" cy="15" r="15"></circle>
+    </g>
+</svg>

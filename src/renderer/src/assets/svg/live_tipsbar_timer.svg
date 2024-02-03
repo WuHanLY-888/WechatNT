@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>time</title>
+    <g id="time" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="3.Icons/Filled/time" fill="#606060">
+            <g id="icon21">
+                <path d="M8,1.33333333 C11.6818983,1.33333333 14.6666667,4.31810167 14.6666667,8 C14.6666667,11.6818983 11.6818983,14.6666667 8,14.6666667 C4.31810167,14.6666667 1.33333333,11.6818983 1.33333333,8 C1.33333333,4.31810167 4.31810167,1.33333333 8,1.33333333 Z M8.5,4 L7.5,4 L7.5,8 L7.50033333,7.99933333 L7.5,8.00043983 L10.3284271,10.828867 L11.0355339,10.1217602 L8.49933333,7.58533333 L8.5,4 Z" id="图标颜色"></path>
+            </g>
+        </g>
+    </g>
+</svg>

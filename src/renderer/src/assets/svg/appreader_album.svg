@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18px" height="16px" viewBox="0 0 18 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>3.Icons/Outlined/album</title>
+    <defs>
+        <filter x="-25.0%" y="-25.0%" width="150.0%" height="150.0%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="1" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.3 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="3.Icons/Outlined/album" transform="translate(1.000000, 0.000000)" fill="#FFFFFF" filter="url(#filter-1)">
+            <g id="Pic" transform="translate(1.333333, 2.666667)">
+                <path d="M12.6721313,0 C13.0297963,0 13.3333333,0.320758001 13.3333333,0.716433048 L13.3333333,9.95023362 C13.3333333,10.3474345 13.0373031,10.6666667 12.6721313,10.6666667 L0.661202073,10.6666667 C0.303537051,10.6666667 0,10.3459087 0,9.95023362 L0,0.716433048 C0,0.319232146 0.296030252,0 0.661202073,0 L12.6721313,0 Z M4.67070417,4.62672216 L0.8,7.755 L0.8,9.86666667 L12.5333333,9.86666667 L12.5333331,7.99573956 L10.2841225,5.97192794 L8.82531717,7.21247243 L9.72162588,8 L8.54077815,8 L4.67070417,4.62672216 Z M12.5333333,0.8 L0.8,0.8 L0.8,6.728 L4.13283035,4.0328391 C4.44119936,3.78345667 4.93641708,3.79555146 5.23366361,4.05672245 L8.21794859,6.67881757 L9.73940169,5.38499844 C10.047545,5.12295837 10.5378153,5.12828172 10.8369543,5.39672246 L12.533,6.939 L12.5333333,0.8 Z" id="Combined-Shape"></path>
+            </g>
+        </g>
+    </g>
+</svg>

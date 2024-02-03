@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="40px" height="40px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 61 (89581) - https://sketch.com -->
+    <title>fileicon_pause</title>
+    <desc>Created with Sketch.</desc>
+    <g id="fileicon_pause" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Icons/File/State/Pause">
+            <rect id="Icon-Background" fill-opacity="0" fill="#000000" x="0" y="0" width="40" height="40"></rect>
+            <circle id="BG" fill-opacity="0.5" fill="#000000" cx="20" cy="20" r="10"></circle>
+            <path d="M20,10 C25.5228475,10 30,14.4771525 30,20 C30,25.5228475 25.5228475,30 20,30 C14.4771525,30 10,25.5228475 10,20 C10,14.4771525 14.4771525,10 20,10 Z M20,11.2 C15.1398942,11.2 11.2,15.1398942 11.2,20 C11.2,24.8601058 15.1398942,28.8 20,28.8 C24.8601058,28.8 28.8,24.8601058 28.8,20 C28.8,15.1398942 24.8601058,11.2 20,11.2 Z M18.2,15.5 L18.2,24.5 L17,24.5 L17,15.5 L18.2,15.5 Z M23.2,15.5 L23.2,24.5 L22,24.5 L22,15.5 L23.2,15.5 Z" id="Pause" fill="#FFFFFF"></path>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 64 (93537) - https://sketch.com -->
+    <title>仅聊天</title>
+    <desc>Created with Sketch.</desc>
+    <g id="6.0最终定稿-mac版" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" fill-opacity="0.9">
+        <g id="画板" transform="translate(-427.000000, -803.000000)" fill="#000000">
+            <g id="3.Icons/Filled/chats" transform="translate(427.000000, 803.000000)">
+                <g id="common_icons_chats">
+                    <path d="M8,13.3333333 C11.6818983,13.3333333 14.6666667,10.7962802 14.6666667,7.66666667 C14.6666667,4.53705308 11.6818983,2 8,2 C4.31810167,2 1.33333333,4.53705308 1.33333333,7.66666667 C1.33333333,9.35760296 2.20466537,10.8755553 3.58650417,11.9138223 L3.38510603,13.6464092 C3.36384973,13.8292728 3.49485835,13.9947447 3.67772198,14.016001 C3.74025519,14.02327 3.80356848,14.0126819 3.86033404,13.9854622 L5.84896945,13.0318905 C6.52382039,13.2273156 7.24734445,13.3333333 8,13.3333333 Z" id="图标颜色"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -3,9 +3,10 @@ import WindowManager from './windowManager'
 
 import { WechatyBuilder, ScanStatus, Contact } from '../src/mods/mod.js'
 import { WechatyInterface } from '../src/wechaty/wechaty-impl'
-
+import Store from "electron-store";
 import MsgManager from './Message'
 
+const store = new Store()
 interface userdata {
     // [key: string]: unknown
     isLogin: boolean
@@ -74,6 +75,7 @@ class userManager {
         const loginWin = WindowManager.init().loginWindow
 
         loginWin?.webContents.send('user-scan', { qrcode, status, data })
+        console.log({ qrcode, status, data });
 
         switch (status) {
             case ScanStatus.Waiting || ScanStatus.Timeout:
@@ -84,6 +86,7 @@ class userManager {
                 console.info('onScan: %s(%s) - %s', ScanStatus[status], status, qrcodeImageUrl)
 
             case ScanStatus.Scanned:
+                data && store.set('userAvatar', data)
                 this.userdata.avatar = data
 
             default:
@@ -135,6 +138,10 @@ class userManager {
         }
     }
     public async userlogin(contact: Contact) {
+        const file = await contact.avatar()
+        const name = file.name
+        await file.toFile(name, true)
+
         this.userdata = {
             ...this.userdata,
             isLogin: true,

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="30px" height="30px" viewBox="0 0 30 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>收起面板</title>
+    <g id="收起面板" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="编组-3">
+            <circle id="椭圆形备份-5" fill="#404040" cx="15" cy="15" r="15"></circle>
+            <g id="编组-2" opacity="0.93" transform="translate(7.000000, 7.000000)">
+                <rect id="矩形" x="0" y="0" width="16" height="16"></rect>
+            </g>
+        </g>
+        <rect id="矩形" fill="#FFFFFF" x="8" y="19" width="14" height="2"></rect>
+        <rect id="矩形备份" fill="#FFFFFF" x="8" y="14" width="14" height="2"></rect>
+        <rect id="矩形备份-2" fill="#FFFFFF" x="8" y="9" width="14" height="2"></rect>
+    </g>
+</svg>

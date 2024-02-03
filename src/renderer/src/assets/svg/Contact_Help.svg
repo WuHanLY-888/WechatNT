@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="54px" height="54px" viewBox="0 0 54 54" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 57.1 (83088) - https://sketch.com -->
+    <title>Icons/Dark/help</title>
+    <desc>Created with Sketch.</desc>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="通讯录管理器-多选状态" transform="translate(-293.000000, -150.000000)" fill="#FA5151" fill-rule="nonzero">
+            <g id="编组-6" transform="translate(170.000000, 89.000000)">
+                <g id="编组-7" transform="translate(64.000000, 56.000000)">
+                    <g id="Icons/Dark/help" transform="translate(54.000000, 0.000000)">
+                        <g id="common_icons_info">
+                            <g id="Group-19" transform="translate(5.333333, 5.333333)">
+                                <path d="M26.6666667,0 C41.39426,0 53.3333333,11.9390733 53.3333333,26.6666667 C53.3333333,41.39426 41.39426,53.3333333 26.6666667,53.3333333 C11.9390733,53.3333333 0,41.39426 0,26.6666667 C0,11.9390733 11.9390733,0 26.6666667,0 Z M26.6666667,36.7257818 C25.4166667,36.7257818 24.4401042,37.682813 24.4401042,38.9523443 C24.4401042,40.2023443 25.4166667,41.1789068 26.6666667,41.1789068 C27.9361979,41.1789068 28.8932292,40.2023443 28.8932292,38.9523443 C28.8932292,37.682813 27.9361979,36.7257818 26.6666667,36.7257818 Z M28.4244792,12.8000005 L24.9088542,12.8000005 L25.1432292,31.6281255 L28.1901042,31.6281255 L28.4244792,12.8000005 Z" id="Combined-Shape"></path>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

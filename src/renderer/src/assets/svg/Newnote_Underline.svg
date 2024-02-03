@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Newnote_Underline</title>
+    <g id="Newnote_Underline" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect id="mask" fill-opacity="0" fill="#FFFFFF" x="0" y="0" width="24" height="24"></rect>
+        <path d="M6,19.8 L18,19.8 L18,21 L6,21 L6,19.8 Z M8.2,12.9814343 C8.2,15.0795462 9.90280965,16.7897406 12.0033318,16.7897406 L12.0033318,16.7897406 L12.1986747,16.7847853 C14.2046055,16.6827869 15.8066636,15.0189766 15.8066636,12.9814343 L15.8066636,12.9814343 L15.8066636,3.5 L16.9906869,3.5 L16.9906869,13.0335082 C16.9906869,15.7235822 14.8650346,17.9177217 12.2116109,18.0313398 L11.9953434,18.0359616 C9.23649144,18.0359616 7,15.7965736 7,13.0335082 L7,3.5 L8.2,3.5 Z" id="形状结合" fill-opacity="0.9" fill="#000000"></path>
+    </g>
+</svg>

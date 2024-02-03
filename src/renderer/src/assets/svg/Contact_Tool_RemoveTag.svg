@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>0.图标/线型/icons_outlined_retract</title>
+    <g id="0.图标/线型/icons_outlined_retract" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" fill-opacity="0.9">
+        <path d="M12,2 C17.5228475,2 22,6.4771525 22,12 C22,17.5228475 17.5228475,22 12,22 C6.4771525,22 2,17.5228475 2,12 C2,6.4771525 6.4771525,2 12,2 Z M12,3.2 C7.1398942,3.2 3.2,7.1398942 3.2,12 C3.2,16.8601058 7.1398942,20.8 12,20.8 C16.8601058,20.8 20.8,16.8601058 20.8,12 C20.8,7.1398942 16.8601058,3.2 12,3.2 Z" id="Combined-Shape" fill="#000000"></path>
+        <path d="M14.2071068,9.03553391 L14.2071068,10.235534 L9.40710678,10.2355339 L9.40710683,15.0355339 L8.20710678,15.0355339 L8.20710678,10.0355339 C8.20710678,9.48324916 8.65482203,9.03553391 9.20710678,9.03553391 L14.2071068,9.03553391 Z" id="Combined-Shape" fill="#000000" transform="translate(11.207107, 12.035534) rotate(-45.000000) translate(-11.207107, -12.035534) "></path>
+        <rect id="Rectangle-22" fill="#000000" x="8" y="11.3999996" width="9" height="1.20000005"></rect>
+    </g>
+</svg>

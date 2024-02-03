@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>icon/All32</title>
+    <g id="icon/All32" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="编组">
+            <rect id="矩形" x="0" y="0" width="32" height="32"></rect>
+            <g id="3.Icons/Outlined/folder" transform="translate(5.000000, 8.000000)" fill="#000000" fill-opacity="0.9">
+                <path d="M7.55,0.4 L9.425,1.9 L19.8,1.9 C20.3522847,1.9 20.8,2.34771525 20.8,2.9 L20.8,15.4 C20.8,15.9522847 20.3522847,16.4 19.8,16.4 L1.8,16.4 C1.24771525,16.4 0.8,15.9522847 0.8,15.4 L0.8,1.4 C0.8,0.84771525 1.24771525,0.4 1.8,0.4 L7.55,0.4 Z M7.12906273,1.6 L2,1.6 L2,15.2 L19.6,15.2 L19.6,3.1 L9.00406273,3.1 L7.12906273,1.6 Z" id="图标颜色"></path>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="168px" height="72px" viewBox="0 0 168 72" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>0.图标/线型/icons_outlined_moving备份 2@1x</title>
+    <g id="0.图标/线型/icons_outlined_moving备份-2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect id="矩形" fill-opacity="0" fill="#D8D8D8" x="0" y="0" width="168" height="72"></rect>
+        <g id="编组-5" transform="translate(124.000000, 8.000000)">
+            <rect id="矩形" stroke="#000000" stroke-width="1.2" x="0.6" y="0.6" width="34.8" height="54.8" rx="3.375"></rect>
+            <rect id="矩形备份-16" fill-opacity="0.9" fill="#000000" x="13" y="51" width="10" height="1.2"></rect>
+        </g>
+        <g id="编组" transform="translate(91.000000, 32.000000)" fill="#000000">
+            <circle id="椭圆形" opacity="0.3" cx="1.5" cy="3.5" r="1.5"></circle>
+            <circle id="椭圆形备份" opacity="0.3" cx="8.5" cy="3.5" r="1.5"></circle>
+            <circle id="椭圆形备份-2" opacity="0.3" cx="15.5" cy="3.5" r="1.5"></circle>
+            <g id="0.图标/线型/icons_outlined_sending" transform="translate(23.123414, 3.535534) scale(-1, 1) translate(-23.123414, -3.535534) translate(21.000000, 0.000000)" fill-opacity="0.3">
+                <g id="Group-11">
+                    <path d="M3.36294492,1.4610535e-13 L4.2468284,0.883883476 L1.595,3.535 L4.2468284,6.18718434 L3.36294492,7.07106781 L0.122038841,3.83016173 C-0.0406796137,3.66744328 -0.0406796137,3.40362454 0.122038841,3.24090608 L3.36294492,1.4610535e-13 Z" id="Combined-Shape"></path>
+                </g>
+            </g>
+        </g>
+        <g id="编组-4" transform="translate(14.000000, 8.000000)">
+            <rect id="矩形" stroke="#000000" stroke-width="1.2" x="0.6" y="0.6" width="68.8" height="46.8" rx="3.28348306"></rect>
+            <rect id="矩形" fill="#000000" x="19" y="55" width="32" height="1.2" rx="0.3"></rect>
+            <g id="编组-2" transform="translate(32.000000, 47.000000)" fill="#000000">
+                <rect id="矩形备份" transform="translate(0.600000, 4.600000) rotate(90.000000) translate(-0.600000, -4.600000) " x="-3.4" y="4" width="8" height="1.2"></rect>
+                <rect id="矩形备份-2" transform="translate(5.800000, 4.000000) rotate(90.000000) translate(-5.800000, -4.000000) " x="1.8" y="3.4" width="8" height="1.2"></rect>
+            </g>
+        </g>
+        <rect id="矩形备份-3" fill="#111111" x="23" y="19" width="12" height="1.2"></rect>
+        <rect id="矩形备份-4" fill="#111111" x="23" y="26" width="18" height="1.2"></rect>
+        <rect id="矩形备份-5" fill="#111111" x="23" y="33" width="9.5" height="1.2"></rect>
+    </g>
+</svg>

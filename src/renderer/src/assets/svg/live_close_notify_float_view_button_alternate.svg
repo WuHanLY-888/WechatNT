@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>关闭</title>
+    <g id="关闭" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" fill-opacity="0.596637228" stroke-opacity="0.201002038">
+        <g id="编组" fill="#FFFFFF" stroke="#000000">
+            <g id="Group" transform="translate(2.666667, 2.666667)">
+                <path d="M9.1045695,0.972841516 L9.69382515,1.56209717 L5.92258898,5.33333333 L9.69382515,9.1045695 L9.1045695,9.69382515 L5.33333333,5.92258898 L1.56209717,9.69382515 L0.972841516,9.1045695 L4.74407768,5.33333333 L0.972841516,1.56209717 L1.56209717,0.972841516 L5.33333333,4.74407768 L9.1045695,0.972841516 Z" id="图标颜色"></path>
+            </g>
+        </g>
+    </g>
+</svg>

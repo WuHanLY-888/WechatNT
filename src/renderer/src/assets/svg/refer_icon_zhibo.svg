@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>icon_zhibo@1x</title>
+    <g id="icon_zhibo" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="fileicon_word-120-@2x">
+            <rect id="矩形" x="0" y="0" width="16" height="16"></rect>
+            <path d="M8,1 C11.8659932,1 15,4.13400675 15,8 C15,11.8659932 11.8659932,15 8,15 C4.13400675,15 1,11.8659932 1,8 C1,4.13400675 4.13400675,1 8,1 Z M8,2.05 C4.71390574,2.05 2.05,4.71390574 2.05,8 C2.05,11.2860943 4.71390574,13.95 8,13.95 C11.2860943,13.95 13.95,11.2860943 13.95,8 C13.95,4.71390574 11.2860943,2.05 8,2.05 Z" id="椭圆形备份-7" fill-opacity="0.5" fill="#000000" fill-rule="nonzero"></path>
+            <circle id="椭圆形备份-8" fill-opacity="0.5" fill="#000000" cx="8" cy="8" r="3"></circle>
+        </g>
+    </g>
+</svg>

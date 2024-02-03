@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>0 图标/1 线性/icons_outlined_arrow_up\down</title>
+    <g id="视觉标注及切图" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="画板" transform="translate(-1306.000000, -929.000000)" fill="#FFFFFF">
+            <g id="0-图标/1-线性/icons_outlined_arrow_up\down" transform="translate(1306.000000, 929.000000)">
+                <path d="M13.1441423,15.1263754 L12.2602588,16.0102588 L7.56238876,11.3123888 C7.17218242,10.9221824 7.17774286,10.2839725 7.56238876,9.89932662 L12.2602588,5.20145654 L13.1441423,6.08534002 L8.62362464,10.6058577 L13.1441423,15.1263754 Z" id="Combined-Shape" transform="translate(10.000000, 10.605858) rotate(-90.000000) translate(-10.000000, -10.605858) "></path>
+                <rect id="BG" fill-opacity="0" x="0" y="0" width="20" height="20"></rect>
+            </g>
+        </g>
+    </g>
+</svg>

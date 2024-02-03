@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 61.2 (89653) - https://sketch.com -->
+    <title>Icons/ComposeInput/Folder</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Icons/ComposeInput/Folder" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect id="Icon-Background" fill-opacity="0" fill="#D8D8D8" x="0" y="0" width="24" height="24"></rect>
+        <path d="M21.6,19.425 C21.6,19.9634776 21.1701934,20.4 20.64,20.4 L3.36,20.4 C2.82980664,20.4 2.4,19.9634776 2.4,19.425 L2.4,5.775 C2.4,5.23652237 2.82980664,4.8 3.36,4.8 L8.88,4.8 L10.68,6.2625 L20.64,6.2625 C21.1701934,6.2625 21.6,6.69902237 21.6,7.2375 L21.6,19.425 Z M20.448,10.845 L3.551,10.845 L3.552,19.23 L20.448,19.23 L20.448,10.845 Z M8.47590022,5.97 L3.552,5.97 L3.551,9.674 L20.448,9.674 L20.448,7.4325 L10.2759002,7.4325 L8.47590022,5.97 Z" id="Folder" fill="#000000"></path>
+    </g>
+</svg>

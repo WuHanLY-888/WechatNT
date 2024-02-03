@@ -4,6 +4,7 @@ import WindowManager from './services/windowManager'
 import user from './services/userManager'
 import { Default } from './services/ipcMain'
 
+
 // console.log(import.meta.env.VITE_MY_VARIABLE)
 
 function AppReady(): void {

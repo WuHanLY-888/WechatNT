@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 63.1 (92452) - https://sketch.com -->
+    <title>icon_arrow</title>
+    <desc>Created with Sketch.</desc>
+    <g id="icon_arrow" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.9">
+        <g id="0.图标/01.线性/icons_outlined_arrow_up\down" transform="translate(16.000000, 16.000000) scale(-1, -1) rotate(-90.000000) translate(-16.000000, -16.000000) translate(0.000000, -0.000000)" fill="#FFFFFF">
+            <path d="M21.0306277,24.2022006 L19.6164141,25.6164141 L11.676996,17.676996 C11.2861862,17.2861862 11.2873802,16.6513644 11.676996,16.2617486 L19.6164141,8.32233047 L21.0306277,9.73654403 L13.7977994,16.9693723 L21.0306277,24.2022006 Z" id="图标颜色" transform="translate(16.000000, 16.969372) rotate(-90.000000) translate(-16.000000, -16.969372) "></path>
+        </g>
+    </g>
+</svg>

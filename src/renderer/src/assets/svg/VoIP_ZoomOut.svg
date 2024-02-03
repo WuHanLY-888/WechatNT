@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="28px" height="28px" viewBox="0 0 28 28" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>VoIP_ZoomOut</title>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="VoIP_ZoomOut" fill-rule="nonzero">
+            <circle id="椭圆形" fill-opacity="0.15" fill="#FFFFFF" cx="14" cy="14" r="14"></circle>
+            <g id="Zoom-Out" transform="translate(2.000000, 2.000000)">
+                <path d="M5.30263565,19.1995249 C5.02649328,19.1995249 4.80263565,18.9756673 4.80263565,18.6995249 L4.802,18.1631504 L4.8,18.1617816 L4.802,18.1591504 L4.80263565,14.3085249 L6.26963565,14.3085249 L6.27,16.6911504 L10.3346311,12.6271504 L11.3723745,13.6648938 L7.305,17.7311504 L9.69363565,17.7325249 L9.69363565,19.1995249 L5.30263565,19.1995249 Z M18.6968893,4.8 C18.9730316,4.8 19.1968893,5.02385763 19.1968893,5.3 L19.1975249,5.83637448 L19.1995249,5.83774334 L19.1975249,5.84037448 L19.1968893,9.691 L17.7298893,9.691 L17.7295249,7.30837448 L13.6648938,11.3723745 L12.6271504,10.3346311 L16.6945249,6.26837448 L14.3058893,6.267 L14.3058893,4.8 L18.6968893,4.8 Z" id="Combined-Shape" fill-opacity="0.9" fill="#ffffff"></path>
+                <rect id="BG" fill-opacity="0" fill="#FFFFFF" x="0" y="0" width="24" height="24"></rect>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Newnote_folder@svg</title>
+    <g id="Newnote_folder" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Picture" transform="translate(2.000000, 4.000000)" fill="#000000" fill-opacity="0.9">
+            <path d="M20,15 C20,15.5522847 19.5522847,16 19,16 L1,16 C0.44771525,16 0,15.5522847 0,15 L0,1 C0,0.44771525 0.44771525,0 1,0 L6.75,0 L8.625,1.5 L19,1.5 C19.5522847,1.5 20,1.94771525 20,2.5 L20,15 Z M18.8,6.2 L1.199,6.2 L1.2,14.8 L18.8,14.8 L18.8,6.2 Z M6.32906273,1.2 L1.2,1.2 L1.199,5 L18.8,5 L18.8,2.7 L8.20406273,2.7 L6.32906273,1.2 Z" id="Combined-Shape"></path>
+        </g>
+        <rect id="mask" fill-opacity="0" fill="#FFFFFF" x="-1.77635684e-15" y="0" width="24" height="24"></rect>
+    </g>
+</svg>

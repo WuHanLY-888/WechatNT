@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>0.图标/线型/icons_outlined_text@svg</title>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="24" height="24"></rect>
+        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="24" height="24" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+    </defs>
+    <g id="0.图标/线型/icons_outlined_text" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="0.图标/线型/zGrid" opacity="0" transform="translate(-10.500000, -10.000000)">
+            <g id="3.Icons/z-grid" transform="translate(10.500000, 10.000000)" stroke="#000000">
+                <use id="Rectangle-10" mask="url(#mask-2)" stroke-width="0.2" stroke-dasharray="3,3,3,5" xlink:href="#path-1"></use>
+                <rect id="Rectangle-44" stroke-width="0.1" x="3.05" y="3.05" width="17.9" height="17.9" rx="1.5"></rect>
+                <rect id="Rectangle-42" stroke-width="0.1" x="2.05" y="4.05" width="19.9" height="15.9" rx="1.5"></rect>
+                <circle id="Oval-1" stroke-width="0.1" cx="12" cy="12" r="9.95"></circle>
+                <path d="M18.5,2.05 C18.9004064,2.05 19.2629064,2.21229678 19.5253048,2.47469517 C19.7877032,2.73709356 19.95,3.09959356 19.95,3.5 L19.95,3.5 L19.95,20.5 C19.95,20.9004064 19.7877032,21.2629064 19.5253048,21.5253048 C19.2629064,21.7877032 18.9004064,21.95 18.5,21.95 L18.5,21.95 L5.5,21.95 C5.09959356,21.95 4.73709356,21.7877032 4.47469517,21.5253048 C4.21229678,21.2629064 4.05,20.9004064 4.05,20.5 L4.05,20.5 L4.05,3.5 C4.05,3.09959356 4.21229678,2.73709356 4.47469517,2.47469517 C4.73709356,2.21229678 5.09959356,2.05 5.5,2.05 L5.5,2.05 Z" id="Rectangle-42" stroke-width="0.1"></path>
+                <line x1="0" y1="0" x2="24" y2="24" id="Path-7" stroke-width="0.1"></line>
+                <line x1="24" y1="0" x2="0" y2="24" id="Path-7" stroke-width="0.1"></line>
+            </g>
+            <image id="位图" x="0" y="0" width="43" height="43" xlink:href="data:image/png;base64,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"></image>
+        </g>
+        <g id="Group" fill="#000000" fill-opacity="0.9">
+            <path d="M20,3 C20.5522847,3 21,3.44771525 21,4 L21,20 C21,20.5522847 20.5522847,21 20,21 L4,21 C3.44771525,21 3,20.5522847 3,20 L3,4 C3,3.44771525 3.44771525,3 4,3 L20,3 Z M19.8,4.2 L4.2,4.2 L4.2,19.8 L19.8,19.8 L19.8,4.2 Z M16.5,7.5 L16.5,8.70000005 L12.5999939,8.70000005 L12.5999939,17.5 L11.3999939,17.5 L11.3999939,8.70000005 L7.5,8.70000005 L7.5,7.5 L16.5,7.5 Z" id="Rectangle-14"></path>
+        </g>
+    </g>
+</svg>

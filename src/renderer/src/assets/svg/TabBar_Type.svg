@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>icon/Type32</title>
+    <g id="icon/Type32" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="编组">
+            <rect id="矩形" x="0" y="0" width="32" height="32"></rect>
+            <g id="编组-2" transform="translate(4.000000, 4.000000)">
+                <rect id="矩形" x="0" y="0" width="24" height="24"></rect>
+                <path d="M13.4979043,2 L19.5,8 L19.5,21.0013542 C19.5,21.5542301 19.0541613,22 18.5041915,22 L5.49580851,22 C4.94892021,22 4.5,21.552891 4.5,21.0013542 L4.5,2.99864581 C4.5,2.44576991 4.94583866,2 5.49580851,2 L13.4979043,2 Z M13.0009707,3.2 L5.7,3.2 L5.7,20.8 L18.3,20.8 L18.3,8.49717902 L13.0009707,3.2 Z" id="形状结合" fill-opacity="0.9" fill="#000000"></path>
+                <polygon id="Path" fill-opacity="0.9" fill="#000000" points="9 10 15 10 15 11.2 9 11.2"></polygon>
+                <polygon id="Path备份-2" fill-opacity="0.9" fill="#000000" points="9 14 15 14 15 15.2 9 15.2"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>

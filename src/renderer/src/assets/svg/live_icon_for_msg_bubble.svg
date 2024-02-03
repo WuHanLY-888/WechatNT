@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>聊天气泡内顶部条icon</title>
+    <g id="聊天气泡内顶部条icon" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="live_icon">
+            <rect id="矩形" x="0" y="0" width="16" height="16"></rect>
+            <circle id="椭圆形备份-7" stroke="#FF6146" stroke-width="1.2" cx="8" cy="8" r="6.06666667"></circle>
+            <circle id="椭圆形备份-8" fill="#FF6146" cx="8" cy="8" r="3.66666667"></circle>
+        </g>
+    </g>
+</svg>

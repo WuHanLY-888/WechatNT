@@ -26,7 +26,9 @@ class WindowManager {
             this.mainWindow = new BrowserWindow({
                 ...configs.browser,
                 width: 1000,
-                height: 700
+                height: 700,
+                vibrancy: 'medium-light',
+                visualEffectState: 'active'
             })
             this.mainWindow.loadURL(baseURL + '#ipcCommunication')
             this.mainWindow.on('close', () => {
