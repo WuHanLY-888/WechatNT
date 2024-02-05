@@ -10,7 +10,7 @@ export const Default = () => {
         return 'win.loginWindow?.id'
     })
 
-    ipcMain.handleOnce('get-userAvatar', () => store.get('userAvatar'))
+    ipcMain.handle('get-userAvatar', () => store.get('userAvatar'))
     // ipcHelper.handle('get-scan', () => {
     //     const data = user.getScanInfo()
     //     return data

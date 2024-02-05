@@ -1,87 +1,74 @@
-import React from 'react'
-import {
-    AppstoreOutlined,
-    ContainerOutlined,
-    DesktopOutlined,
-    MailOutlined,
-    PieChartOutlined
-} from '@ant-design/icons'
-import type { MenuProps } from 'antd'
-import { Menu } from 'antd'
+import React, { useState } from 'react'
+import style from './index.module.less'
 import SvgIcon from '@renderer/assets/SvgIcon'
-
-type MenuItem = Required<MenuProps>['items'][number]
+import { useNavigate } from 'react-router-dom'
 
 function getItem(
-    key: React.Key,
-    icon?: React.ReactNode,
-    children?: MenuItem[],
-    type?: 'group'
-): MenuItem {
-    return {
-        label: '',
-        key,
-        icon,
-        children,
-        type,
-        style: {
-            padding: '0 16px',
-            fontSize: 20
-        }
-    } as MenuItem
+    icon: string,
+    ActiveIcon: string,
+): (isAction: boolean) => React.ReactNode {
+    return (isAction) =>
+        <SvgIcon
+            name={isAction ? ActiveIcon : icon}
+            size={32}
+        />
 }
 
-const items: MenuItem[] = [
-    getItem('1', <SvgIcon name="Contact_Chats" />),
-    getItem('2', <DesktopOutlined />),
-    getItem('3', <ContainerOutlined />),
-
-    getItem('sub1', <MailOutlined />, [getItem('5'), getItem('6'), getItem('7'), getItem('8')]),
-
-    getItem('sub2', <AppstoreOutlined />, [
-        getItem('9'),
-        getItem('10'),
-
-        getItem('sub3', null, [getItem('Option 11', '11'), getItem('Option 12', '12')])
-    ])
+const items: Array<(isAction: boolean) => React.ReactNode> = [
+    getItem('TabBar_Chat', 'TabBar_Chat_Selected'),
+    getItem('TabBar_Contacts', 'TabBar_Contacts_Selected'),
+    getItem('TabBar_Favorites', 'TabBar_Favorites_Selected'),
+    getItem('TabBar_Folder', 'TabBar_Favorites_Selected'),
+    getItem('TabBar_SNS', 'TabBar_Favorites_Selected'),
+    getItem('TabBar_Feed', 'TabBar_Favorites_Selected'),
+    getItem('TabBar_News', 'TabBar_Favorites_Selected'),
+    getItem('TabBar_WebSearch', 'TabBar_Favorites_Selected'),
 ]
-const bottonItems: MenuItem[] = [
-    getItem('1', <PieChartOutlined />),
-    getItem('2', <DesktopOutlined />),
-    getItem('3', <ContainerOutlined />)
+const bottonItems: Array<(isAction: boolean) => React.ReactNode> = [
+    getItem('Profile_WeApp', 'TabBar_Favorites_Selected'),
+    getItem('TabBar_Handoff', 'TabBar_Favorites_Selected'),
+    getItem('TabBar_Setting', 'TabBar_Favorites_Selected'),
+
 ]
 
 const App: React.FC = () => {
+    const [current, setCurrent] = useState(0)
+    const navigateTo = useNavigate()
+    const handleClick = (e: number) => {
+        if (e <= 2) {
+            setCurrent(e)
+            navigateTo('/Chat')
+            //跳转
+        } else {
+            // 其他操作
+        }
+    }
     return (
         <div
             style={{
                 width: 60,
-                height: 'calc(100% - 115px)',
+                height: 'calc(100vh - 115px)',
                 display: 'flex',
                 flexDirection: 'column',
                 justifyContent: 'space-between'
             }}
         >
-            <Menu
-                style={{
-                    background: '#ffffff00',
-                    width: 60
-                }}
-                inlineCollapsed={false}
-                mode="inline"
-                defaultSelectedKeys={['1']}
-                defaultOpenKeys={['sub1']}
-                items={items}
-            />
-            <Menu
-                style={{
-                    background: '#ffffff00',
-                    height: 200
-                }}
-                defaultSelectedKeys={['1']}
-                defaultOpenKeys={['sub1']}
-                items={bottonItems}
-            />
+            <ul className={`${style.menuTop} ${style.ul}`}>
+                {items.map((item, index) => <li
+                    onClick={() => handleClick(index)}
+                    key={index}
+                    style={{ color: current === index ? '#58be6a' : '#717171' }}
+                >
+                    {item(current === index)}
+                </li>)}
+            </ul>
+            <ul className={`${style.menuTop} ${style.ul}`}>
+                {bottonItems.map((item, index) => <li
+                    onClick={() => handleClick(index)} key={index}
+                    style={{ color: '#6d6d6c' }}>
+                    {item(false)}
+                </li>)}
+            </ul>
         </div>
     )
 }

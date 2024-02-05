@@ -238,3 +238,7 @@ a:hover {
 .no-drag {
   -webkit-app-region: no-drag;
 }
+
+svg {
+  fill: currentColor !important;
+}

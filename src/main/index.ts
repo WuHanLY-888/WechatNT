@@ -8,7 +8,6 @@ import { Default } from './services/ipcMain'
 
 function AppReady(): void {
     // 在macOS上，dock图标被点击时，会触发
-
     const win = WindowManager.init()
     // 此处用 isLogin判断登陆状态，后修改代码可用token结合后台判断登陆状态
     const main = user.getUserData('isLogin') ? win.mainWin() : win.loginWin()

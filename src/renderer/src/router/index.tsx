@@ -3,9 +3,11 @@ import { Navigate } from 'react-router-dom'
 import Login from '@renderer/Pages/Login'
 
 const Layout = lazy(() => import('@renderer/layout'))
+const Chat = lazy(() => import('@renderer/Pages/Chat'))
 const About = lazy(() => import('@renderer/Pages/about'))
 const Map = lazy(() => import('@renderer/Pages/Map'))
 const Page2 = lazy(() => import('@renderer/Pages/about copy 2'))
+
 
 const withLoadingComponent = (comp: JSX.Element) => <React.Suspense>{comp}</React.Suspense>
 
@@ -16,13 +18,17 @@ const NavigateIntercept = () => {
 const routes = [
     {
         path: '/',
-        element: <NavigateIntercept />
+        element: <NavigateIntercept />,
     },
     {
         path: '/',
         element: withLoadingComponent(<Layout />),
         auth: true,
         children: [
+            {
+                path: '/chat',
+                element: withLoadingComponent(<Chat />),
+            },
             {
                 path: '/ipcCommunication',
                 element: withLoadingComponent(<About />),
