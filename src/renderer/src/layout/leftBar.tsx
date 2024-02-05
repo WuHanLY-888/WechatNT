@@ -3,15 +3,8 @@ import style from './index.module.less'
 import SvgIcon from '@renderer/assets/SvgIcon'
 import { useNavigate } from 'react-router-dom'
 
-function getItem(
-    icon: string,
-    ActiveIcon: string,
-): (isAction: boolean) => React.ReactNode {
-    return (isAction) =>
-        <SvgIcon
-            name={isAction ? ActiveIcon : icon}
-            size={32}
-        />
+function getItem(icon: string, ActiveIcon: string): (isAction: boolean) => React.ReactNode {
+    return (isAction) => <SvgIcon name={isAction ? ActiveIcon : icon} size={32} />
 }
 
 const items: Array<(isAction: boolean) => React.ReactNode> = [
@@ -22,13 +15,12 @@ const items: Array<(isAction: boolean) => React.ReactNode> = [
     getItem('TabBar_SNS', 'TabBar_Favorites_Selected'),
     getItem('TabBar_Feed', 'TabBar_Favorites_Selected'),
     getItem('TabBar_News', 'TabBar_Favorites_Selected'),
-    getItem('TabBar_WebSearch', 'TabBar_Favorites_Selected'),
+    getItem('TabBar_WebSearch', 'TabBar_Favorites_Selected')
 ]
 const bottonItems: Array<(isAction: boolean) => React.ReactNode> = [
     getItem('Profile_WeApp', 'TabBar_Favorites_Selected'),
     getItem('TabBar_Handoff', 'TabBar_Favorites_Selected'),
-    getItem('TabBar_Setting', 'TabBar_Favorites_Selected'),
-
+    getItem('TabBar_Setting', 'TabBar_Favorites_Selected')
 ]
 
 const App: React.FC = () => {
@@ -54,20 +46,22 @@ const App: React.FC = () => {
             }}
         >
             <ul className={`${style.menuTop} ${style.ul}`}>
-                {items.map((item, index) => <li
-                    onClick={() => handleClick(index)}
-                    key={index}
-                    style={{ color: current === index ? '#58be6a' : '#717171' }}
-                >
-                    {item(current === index)}
-                </li>)}
+                {items.map((item, index) => (
+                    <li
+                        onClick={() => handleClick(index)}
+                        key={index}
+                        style={{ color: current === index ? '#58be6a' : '#717171' }}
+                    >
+                        {item(current === index)}
+                    </li>
+                ))}
             </ul>
             <ul className={`${style.menuTop} ${style.ul}`}>
-                {bottonItems.map((item, index) => <li
-                    onClick={() => handleClick(index)} key={index}
-                    style={{ color: '#6d6d6c' }}>
-                    {item(false)}
-                </li>)}
+                {bottonItems.map((item, index) => (
+                    <li onClick={() => handleClick(index)} key={index} style={{ color: '#6d6d6c' }}>
+                        {item(false)}
+                    </li>
+                ))}
             </ul>
         </div>
     )

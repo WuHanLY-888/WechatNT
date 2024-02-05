@@ -4,7 +4,6 @@ import { Link, Outlet, useLocation } from 'react-router-dom'
 import WinControl from '@renderer/components/WinControl'
 import MainMenu from '@renderer/layout/MainMenu'
 
-
 const { Header, Content, Footer, Sider } = Layout
 
 const App: React.FC = () => {
@@ -22,15 +21,8 @@ const App: React.FC = () => {
 
     return (
         <Layout>
-            <Sider
-                collapsible
-                collapsed={collapsed}
-                onCollapse={(value) => setCollapsed(value)}
-            >
-                <div
-                    className="logo"
-                    style={{ marginTop: window.platform === 'darwin' ? 30 : 0 }}
-                >
+            <Sider collapsible collapsed={collapsed} onCollapse={(value) => setCollapsed(value)}>
+                <div className="logo" style={{ marginTop: window.platform === 'darwin' ? 30 : 0 }}>
                     <h2 style={{ textAlign: 'center', lineHeight: '30px' }}>logo</h2>
                 </div>
                 <MainMenu />
@@ -45,9 +37,7 @@ const App: React.FC = () => {
                         justifyContent: 'space-between'
                     }}
                 >
-                    <Breadcrumb style={{ lineHeight: '64px' }}>
-                        {extraBreadcrumbItems}
-                    </Breadcrumb>
+                    <Breadcrumb style={{ lineHeight: '64px' }}>{extraBreadcrumbItems}</Breadcrumb>
                     <WinControl />
                 </Header>
                 <Content style={{ margin: '0 16px' }}>

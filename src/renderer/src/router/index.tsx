@@ -8,7 +8,6 @@ const About = lazy(() => import('@renderer/Pages/about'))
 const Map = lazy(() => import('@renderer/Pages/Map'))
 const Page2 = lazy(() => import('@renderer/Pages/about copy 2'))
 
-
 const withLoadingComponent = (comp: JSX.Element) => <React.Suspense>{comp}</React.Suspense>
 
 const NavigateIntercept = () => {
@@ -18,7 +17,7 @@ const NavigateIntercept = () => {
 const routes = [
     {
         path: '/',
-        element: <NavigateIntercept />,
+        element: <NavigateIntercept />
     },
     {
         path: '/',
@@ -27,7 +26,7 @@ const routes = [
         children: [
             {
                 path: '/chat',
-                element: withLoadingComponent(<Chat />),
+                element: withLoadingComponent(<Chat />)
             },
             {
                 path: '/ipcCommunication',
