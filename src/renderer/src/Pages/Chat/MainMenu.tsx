@@ -6,7 +6,7 @@ import {
     UserOutlined
 } from '@ant-design/icons'
 import type { MenuProps } from 'antd'
-import { Menu } from 'antd'
+import { ConfigProvider, Menu } from 'antd'
 import React, { useState } from 'react'
 import { useNavigate, useLocation } from 'react-router-dom'
 
@@ -39,9 +39,9 @@ const items: MenuItem[] = [
 const App: React.FC = () => {
     const navigateTo = useNavigate()
     const menuClick = (e: { key: string }) => {
-        //   console.log(e.key);
+        console.log(e.key);
         // 编程式导航跳转
-        navigateTo(e.key)
+        navigateTo(`/chat${e.key}`)
     }
 
     const currentRoute = useLocation()
@@ -51,15 +51,31 @@ const App: React.FC = () => {
         setOpenkeys([key[key.length - 1]])
     }
     return (
-        <Menu
-            theme="dark"
-            defaultSelectedKeys={[currentRoute.pathname]}
-            mode="inline"
-            items={items}
-            onClick={menuClick}
-            onOpenChange={handleOpenChange}
-            openKeys={openKeys}
-        />
+
+        <ConfigProvider
+            theme={{
+                components: {
+                    Menu: {
+                        itemMarginBlock: 0,
+                        itemBorderRadius: 0,
+                        itemMarginInline: 0,
+                        itemActiveBg: '#dedede',
+                        itemSelectedBg: '#dedede',
+                        itemHeight: 67
+                    }
+                }
+            }}
+        >
+            <Menu
+                theme="light"
+                defaultSelectedKeys={[currentRoute.pathname]}
+                mode="inline"
+                items={items}
+                onClick={menuClick}
+                onOpenChange={handleOpenChange}
+                openKeys={openKeys}
+            />
+        </ConfigProvider>
     )
 }
 

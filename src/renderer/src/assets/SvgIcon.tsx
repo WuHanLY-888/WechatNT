@@ -6,9 +6,11 @@ interface propsTypes {
 }
 export default function SvgIcon({ name, prefix = 'icon', size = 20, ...props }: propsTypes) {
     const symbolId = `#${prefix}-${name}`
+    console.log(name, size);
+
     return (
         <svg
-            style={{ width: size, height: size, fontSize: size, fill: 'currentColor' }}
+            style={{ width: size, height: size, fontSize: size }}
             {...props}
             aria-hidden="true"
         >

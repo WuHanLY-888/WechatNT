@@ -4,6 +4,7 @@ import Login from '@renderer/Pages/Login'
 
 const Layout = lazy(() => import('@renderer/layout'))
 const Chat = lazy(() => import('@renderer/Pages/Chat'))
+const Chatlist = lazy(() => import('@renderer/Pages/Chat/chatlist'))
 const About = lazy(() => import('@renderer/Pages/about'))
 const Map = lazy(() => import('@renderer/Pages/Map'))
 const Page2 = lazy(() => import('@renderer/Pages/about copy 2'))
@@ -26,7 +27,13 @@ const routes = [
         children: [
             {
                 path: '/chat',
-                element: withLoadingComponent(<Chat />)
+                element: withLoadingComponent(<Chat />),
+                children: [
+                    {
+                        path: '/chat/:id',
+                        element: withLoadingComponent(<Chatlist />)
+                    }
+                ]
             },
             {
                 path: '/ipcCommunication',

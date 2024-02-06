@@ -242,3 +242,10 @@ a:hover {
 svg {
   fill: currentColor !important;
 }
+
+:root {
+  --td-brand-color: #57be6b;
+  --td-warning-color: yellow;
+  --td-error-color: red;
+  --td-success-color: green;
+}

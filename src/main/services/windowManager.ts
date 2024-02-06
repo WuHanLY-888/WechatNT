@@ -26,10 +26,12 @@ class WindowManager {
                 ...configs.browser,
                 width: 1000,
                 height: 700,
+                minHeight: 556,
+                minWidth: 830,
                 vibrancy: 'medium-light',
                 visualEffectState: 'active'
             })
-            this.mainWindow.loadURL(baseURL + '#ipcCommunication')
+            this.mainWindow.loadURL(baseURL + '#chat')
             this.mainWindow.on('close', () => {
                 this.mainWindow?.destroy()
                 this.mainWindow = null

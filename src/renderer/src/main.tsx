@@ -1,5 +1,6 @@
 // import React from 'react'
 import ReactDOM from 'react-dom/client'
+import 'tdesign-react/es/style/index.css'
 import './assets/index.css'
 import App from './newApp'
 // import { BrowserRouter } from 'react-router-dom'

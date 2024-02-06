@@ -33,6 +33,7 @@ const App: React.FC = () => {
             //跳转
         } else {
             // 其他操作
+            navigateTo('/page2')
         }
     }
     return (

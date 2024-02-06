@@ -1,30 +1,28 @@
 import React, { useState } from 'react'
-import { Breadcrumb, Layout } from 'antd'
-import { Link, Outlet, useLocation } from 'react-router-dom'
+import { Layout } from 'antd'
+import { Outlet, useParams } from 'react-router-dom'
 import WinControl from '@renderer/components/WinControl'
-import MainMenu from '@renderer/layout/MainMenu'
+import MainMenu from './MainMenu'
+import HeaderSearch from './HeaderSearch';
+
 
 const { Header, Content, Footer, Sider } = Layout
 
 const App: React.FC = () => {
     const [collapsed, setCollapsed] = useState(false)
-    const location = useLocation()
-    const pathSnippets = location.pathname.split('/').filter((i) => i)
-    const extraBreadcrumbItems = pathSnippets.map((_, index) => {
-        const url = `${pathSnippets.slice(0, index + 1).join('/')}`
-        return (
-            <Breadcrumb.Item key={url}>
-                <Link to={url}>{url}</Link>
-            </Breadcrumb.Item>
-        )
-    })
+    const params = useParams()
+    const userIntroduce = () => {
+        console.log('userIntroduce');
+
+    }
+
 
     return (
         <Layout>
-            <Sider collapsible collapsed={collapsed} onCollapse={(value) => setCollapsed(value)}>
-                <div className="logo" style={{ marginTop: window.platform === 'darwin' ? 30 : 0 }}>
-                    <h2 style={{ textAlign: 'center', lineHeight: '30px' }}>logo</h2>
-                </div>
+            <Sider collapsible collapsed={collapsed}
+                width={260} theme='light'
+                onCollapse={(value) => setCollapsed(value)}>
+                <HeaderSearch />
                 <MainMenu />
             </Sider>
             <Layout className="site-layout">
@@ -34,11 +32,19 @@ const App: React.FC = () => {
                         paddingLeft: '20px',
                         paddingRight: '20px',
                         display: 'flex',
-                        justifyContent: 'space-between'
+                        justifyContent: 'space-between',
+                        userSelect: 'none'
                     }}
                 >
-                    <Breadcrumb style={{ lineHeight: '64px' }}>{extraBreadcrumbItems}</Breadcrumb>
-                    <WinControl />
+                    <span onClick={userIntroduce} className='no-drag' >
+                        {params.id}
+                    </span>
+                    <div>
+                        <h1 onClick={userIntroduce} className='no-drag' style={{ fontSize: 25 }}>
+                            ···
+                        </h1>
+                        <WinControl />
+                    </div>
                 </Header>
                 <Content style={{ margin: '0 16px' }}>
                     <Outlet />
