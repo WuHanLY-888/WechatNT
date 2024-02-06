@@ -39,7 +39,7 @@ const items: MenuItem[] = [
 const App: React.FC = () => {
     const navigateTo = useNavigate()
     const menuClick = (e: { key: string }) => {
-        console.log(e.key);
+        console.log(e.key)
         // 编程式导航跳转
         navigateTo(`/chat${e.key}`)
     }
@@ -51,7 +51,6 @@ const App: React.FC = () => {
         setOpenkeys([key[key.length - 1]])
     }
     return (
-
         <ConfigProvider
             theme={{
                 components: {

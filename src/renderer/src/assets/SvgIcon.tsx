@@ -6,14 +6,10 @@ interface propsTypes {
 }
 export default function SvgIcon({ name, prefix = 'icon', size = 20, ...props }: propsTypes) {
     const symbolId = `#${prefix}-${name}`
-    console.log(name, size);
+    console.log(name, size)
 
     return (
-        <svg
-            style={{ width: size, height: size, fontSize: size }}
-            {...props}
-            aria-hidden="true"
-        >
+        <svg style={{ width: size, height: size, fontSize: size }} {...props} aria-hidden="true">
             <use href={symbolId} fill={'currentColor'} />
         </svg>
     )

@@ -3,8 +3,7 @@ import { Layout } from 'antd'
 import { Outlet, useParams } from 'react-router-dom'
 import WinControl from '@renderer/components/WinControl'
 import MainMenu from './MainMenu'
-import HeaderSearch from './HeaderSearch';
-
+import HeaderSearch from './HeaderSearch'
 
 const { Header, Content, Footer, Sider } = Layout
 
@@ -12,16 +11,18 @@ const App: React.FC = () => {
     const [collapsed, setCollapsed] = useState(false)
     const params = useParams()
     const userIntroduce = () => {
-        console.log('userIntroduce');
-
+        console.log('userIntroduce')
     }
-
 
     return (
         <Layout>
-            <Sider collapsible collapsed={collapsed}
-                width={260} theme='light'
-                onCollapse={(value) => setCollapsed(value)}>
+            <Sider
+                collapsible
+                collapsed={collapsed}
+                width={260}
+                theme="light"
+                onCollapse={(value) => setCollapsed(value)}
+            >
                 <HeaderSearch />
                 <MainMenu />
             </Sider>
@@ -36,11 +37,11 @@ const App: React.FC = () => {
                         userSelect: 'none'
                     }}
                 >
-                    <span onClick={userIntroduce} className='no-drag' >
+                    <span onClick={userIntroduce} className="no-drag">
                         {params.id}
                     </span>
                     <div>
-                        <h1 onClick={userIntroduce} className='no-drag' style={{ fontSize: 25 }}>
+                        <h1 onClick={userIntroduce} className="no-drag" style={{ fontSize: 25 }}>
                             ···
                         </h1>
                         <WinControl />
