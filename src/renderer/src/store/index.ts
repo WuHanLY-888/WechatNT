@@ -14,5 +14,7 @@ export type AmapResponse = AxiosResponse<AmapIpPlaceResponse> | null
 export const countAtom = atom<AmapResponse>(null)
 
 export const avatar = atom<string>('')
-// const [avatar, setAvatar] = useAtom(avatar)
-// export { avatar, setAvatar }
+
+export const menuConfig = atom({
+    isCollapsed: false
+})

@@ -1,14 +1,18 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { Layout } from 'antd'
 import { Outlet, useParams } from 'react-router-dom'
 import WinControl from '@renderer/components/WinControl'
 import MainMenu from './MainMenu'
 import HeaderSearch from './HeaderSearch'
+import { useAtom } from 'jotai'
+import { menuConfig } from '@renderer/store'
 
 const { Header, Content, Footer, Sider } = Layout
 
 const App: React.FC = () => {
-    const [collapsed, setCollapsed] = useState(false)
+    // const [collapsed, setCollapsed] = useState(false)
+    const [menuconfig, setMenuconfig] = useAtom(menuConfig)
+
     const params = useParams()
     const userIntroduce = () => {
         console.log('userIntroduce')
@@ -18,10 +22,11 @@ const App: React.FC = () => {
         <Layout>
             <Sider
                 collapsible
-                collapsed={collapsed}
+                collapsed={menuconfig.isCollapsed}
                 width={260}
+                collapsedWidth={80}
                 theme="light"
-                onCollapse={(value) => setCollapsed(value)}
+                onCollapse={(isCollapsed) => setMenuconfig({ ...menuconfig, isCollapsed })}
             >
                 <HeaderSearch />
                 <MainMenu />

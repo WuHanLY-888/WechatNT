@@ -249,3 +249,7 @@ svg {
   --td-error-color: red;
   --td-success-color: green;
 }
+
+.ant-menu-item {
+  line-height: 67px;
+}
